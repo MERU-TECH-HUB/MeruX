@@ -8,7 +8,7 @@ import { useReducedMotion } from "./ReducedMotion";
 interface ModuleCardProps {
   title: string;
   description: string;
-  icon: React.ElementType;
+  icon: React.ComponentType<{ className?: string }>;
   gradient: string;
   rating?: number;
   students?: string;
