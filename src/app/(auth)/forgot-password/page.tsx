@@ -49,6 +49,8 @@ export default function ForgotPasswordPage() {
                     errors[path] = error.message;
                 });
                 setValidationErrors(errors);
+            } else {
+                setError("Unable to connect to the server. Please check your internet connection and try again.");
             }
         } finally {
             setLoading(false);

@@ -66,6 +66,8 @@ export default function LoginPage() {
                     errors[path] = error.message;
                 });
                 setValidationErrors(errors);
+            } else {
+                setError("Unable to connect to the server. Please check your internet connection and try again.");
             }
             setLoading(false);
         }
